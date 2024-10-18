@@ -1,0 +1,126 @@
+:root{
+    --branco-principal: #fefef4;
+    --cinza-secundário: #dbdbd5; 
+    --botao-bege: #fefef4; 
+    --cor-de-fundo: #240c0c; 
+    --fonte-principal: 'inter';
+    --botao-bege-efeito: #f7f7b4;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.principal {
+    background-image: url("img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-bege) ;
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-de-fundo);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    color: var(--branco-principal);
+    border: 2px solid var(--botao-bege);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+align-items: center;
+margin: 0 10em;
+}
+
+.titulo__will {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--botao-bege);
+    margin-bottom: 0.1em;
+}
+
+.descricao__will {
+    color: var(--cinza-secundário);
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__serie {
+    color: var(--cinza-secundário);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--botao-bege);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--botao-bege);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-bege-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.rodape__logo {
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 840px;
+    width: 15%;
+
+}
